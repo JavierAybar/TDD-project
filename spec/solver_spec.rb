@@ -32,6 +32,10 @@ describe '#Solver' do
       expect(new_solver.fizzbuzz(10)).to eq('buzz')
     end
 
+    it 'When N is divisible by 3 and 5, return "fizzbuzz"' do
+      expect(new_solver.fizzbuzz(15)).to eq('fizzbuzz')
+    end
+
     it 'Any other case, return N as a string (e.g. say N is 7 then return "7")' do
       expect(new_solver.fizzbuzz(7)).to eq('7')
     end
